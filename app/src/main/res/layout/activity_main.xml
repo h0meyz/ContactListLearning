@@ -9,30 +9,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_margin="10dp"
         android:textSize="20dp"
         android:gravity="center"
-        android:text="Contacts Information" />
+        android:text="Fetched Contact Information"/>
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignRight="@+id/textView"
-        android:layout_below="@+id/textView"
-        android:gravity="center"
-        android:text="TextView" />
+        android:layout_below="@id/textView"
+        android:textSize="25sp"
+        android:gravity="center">
+    </TextView>
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:textSize="25sp"
+        android:gravity="center">
+    </TextView>
 
-    <ProgressBar
+    <!--<ProgressBar
         android:id="@+id/progressBar1"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true" />
+        android:layout_alignParentRight="true" />-->
 
 </RelativeLayout>
